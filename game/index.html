@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skylane Archipelago — Island Air Rally</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="menu" class="overlay">
+    <div class="panel">
+      <h1>SKYLANE<br>ARCHIPELAGO</h1>
+      <p class="tag">Island air rally &mdash; fly it like you stole it, land it like you own it.</p>
+      <div id="missions"></div>
+      <p class="hint">Click a mission card or press <b>1</b>&ndash;<b>4</b> to fly. Mouse steers when locked (click the sky), wheel = throttle.</p>
+      <div class="controls">
+        <span><b>W/S</b> pitch</span><span><b>A/D</b> bank</span><span><b>Q/E</b> rudder</span>
+        <span><b>R/F</b> throttle</span><span><b>Space</b> action / drop</span><span><b>C</b> camera</span>
+        <span><b>G</b> gear</span><span><b>P</b> pause</span><span><b>M</b> sound</span>
+      </div>
+      <p class="fine">A wholly original game. No network, no trackers, no borrowed art or sound &mdash; every pixel and tone is generated here.</p>
+    </div>
+  </div>
+  <div id="banner" class="overlay hidden"><div id="bannerText"></div><div id="bannerSub"></div><button id="bannerBtn">Fly again</button></div>
+  <div id="toast"></div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
